@@ -1,0 +1,62 @@
+<h1> Course Registration Form</h1>
+<form action = "">
+		<legend> Personal Details </legend>
+		<table>
+			<tr><td><label>First Name: </label></td> <td><input type ="text" name = "name" placeholder = "Ex: Ramkumar" size = 30  required></input></td></tr>
+
+			<tr><td><label>Surname:</label> </td> <td><input type ="text" name = "surname" placeholder = "Ex: Pathapalem" size = 30  required></input></td></tr>
+			
+			<tr><td><label>Mobile Number :</label> </td> <td><input type ="tel" name = "phone" placeholder = "Ex: 716 -635-2736" size = 30  required></input></td></tr>
+			
+
+			<tr><td><label>Email: </label></td> <td><input type ="email" name = "email" placeholder = "Ex: ram@gmail.com" size = 30  required></input></td></tr>
+			
+			<tr><td><label>Password: </label></td> <td><input type ="password" name = "password" placeholder = "Ex: minimum 5 characters.." size =30 required></input></td></tr>
+			<tr><td><label>Confirm Password: </label></td> <td><input type ="password" name = "cpassword" placeholder = "Ex: minimum 5 characters.." size =30 required></input></td></tr>
+			<tr><td><label>DOB: </label></td> <td><input type ="date" name = "password" placeholder = "Ex: minimum 5 characters.."  required></input></td></tr>
+		
+			<tr><td><label>Gender: </label></td> <td><input type ="radio" name = "gender"  value ="M"></input>Male<input type ="radio" name = "gender" ></input>Female<input type ="radio" name = "gender" ></input>Custom</td></tr>
+			
+			<tr><td><label>Select country: </label></td> 
+                <td><select name ="country">
+                    <option value ="India">India</option>
+                    <option value = "USA">USA</option>
+                    <option value ="UK">UK</option>
+                 </select></td></tr>
+
+			<tr><td>Upload picture: </td><td><input type = "file" name = "pic"></td></tr>
+			
+			
+		</table>
+        <input type ="reset" >
+		
+	</fieldset>
+    <fieldset>
+        <legend>Course Details</legend>
+        <table>
+            <tr><td><label>Select Course : </label></td>
+                <td><select name = "course">
+                    <option value = "jf" > Java Full Stack</option>
+                    <option value = "df" > Data Science</option>
+                    <option value = "wd" > Web Development</option>
+                    <option value = "pf"> Python Full Stack</option>
+                </select></td>
+            </tr>
+            <tr><td><label> Delivry Mode:  </label></td>
+                <td>
+                    <input type = "checkbox" name = "mode" value ="on"> Online
+                    <input type = "checkbox" name = "mode" value ="off"> Offline
+                </td>
+
+                </tr>
+                <tr>
+                    <td><label>Comments:</label></td>
+                    <td><textarea name = "comments" rows = "4" cols = "50"></textarea></td>
+                </tr>
+
+        </table>
+
+        
+    </fieldset>
+    <input type = "submit" value = "Submit" ></input>
+</form>
